@@ -1,13 +1,5 @@
-$main-font: "Roboto", sans-serif;
-$main-color: #fff;
-
-@mixin flex-prop($direction) {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
-}
+@import "./flex-prop";
+@import "./variables";
 
 * {
   box-sizing: border-box;
@@ -91,7 +83,7 @@ main {
 .about-layout {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  flex-basis: 100%;
   padding: 50px;
   padding-top: 0;
   margin: auto;

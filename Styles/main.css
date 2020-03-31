@@ -113,7 +113,8 @@ main .bottom-sect p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   padding: 50px;
   padding-top: 0;
   margin: auto;

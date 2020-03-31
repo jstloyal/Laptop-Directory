@@ -1,0 +1,226 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  background: red;
+  position: fixed;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar-brand img {
+  height: 35px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar-nav li {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+main .top-sect {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(/images/lines-of-code.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .top-sect .inside-bg {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  width: 50%;
+  height: 150px;
+  opacity: 0.5;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+main .top-sect .inside-bg .mdb-select {
+  width: 90%;
+}
+
+main .top-sect .inside-bg label {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+main .top-sect .welcome-msg {
+  color: #fff;
+}
+
+main .bottom-sect {
+  width: 60%;
+  margin: auto;
+}
+
+main .bottom-sect p {
+  width: 100%;
+  margin: 20px auto;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 50px;
+  padding-top: 0;
+  margin: auto;
+}
+
+.about-layout .biz-art {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px 50px;
+  text-align: justify;
+}
+
+.about-layout .biz-art p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+footer {
+  height: 200px;
+  background: #000;
+  margin: 0 auto;
+}
+
+footer .first-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+footer .first-list a {
+  color: #fff;
+  padding: 0 25px;
+}
+
+footer .first-list a:hover {
+  font-weight: bolder;
+}
+
+footer .top-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 22px;
+}
+
+.footer-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 40px;
+}
+
+.footer-item a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.footer-item small {
+  color: #fff;
+  font-size: x-small;
+}
+
+.footer-item small a {
+  color: red;
+  font-size: x-small;
+}
+
+.footer-item small a:hover {
+  color: red;
+  font-size: small;
+  font-weight: 600;
+}
+
+.footer-item small input {
+  width: 50%;
+}
+/*# sourceMappingURL=main.css.map */

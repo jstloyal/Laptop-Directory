@@ -1,0 +1,182 @@
+$main-font: "Roboto", sans-serif;
+$main-color: #fff;
+
+@mixin flex-prop($direction) {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  background: red;
+  position: fixed;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.navbar-brand img {
+  height: 35px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    a {
+      color: $main-color;
+      font-family: $main-font;
+    }
+  }
+}
+
+main {
+  .top-sect {
+    @include flex-prop(column);
+    background: url(/images/lines-of-code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .inside-bg {
+      @include flex-prop(column);
+      background: $main-color;
+      width: 50%;
+      height: 150px;
+      opacity: 0.5;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      .mdb-select {
+        width: 90%;
+      }
+
+      label {
+        color: #000;
+        font-family: $main-font;
+        font-size: 18px;
+      }
+    }
+
+    .welcome-msg {
+      color: $main-color;
+    }
+  }
+  .bottom-sect {
+    width: 60%;
+    margin: auto;
+
+    p {
+      width: 100%;
+      margin: 20px auto;
+      font-size: 22px;
+      font-family: $main-font;
+    }
+  }
+}
+
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px;
+  padding-top: 0;
+  margin: auto;
+
+  .biz-art {
+    flex: 1;
+    padding: 20px 50px;
+    text-align: justify;
+
+    p {
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+footer {
+  height: 200px;
+  background: #000;
+  margin: 0 auto;
+
+  .first-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding-top: 20px;
+
+    a {
+      color: $main-color;
+      padding: 0 25px;
+
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .top-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-logo img {
+  height: 22px;
+}
+
+.footer-item {
+  box-sizing: border-box;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 40px;
+
+  a {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  small {
+    color: $main-color;
+    font-size: x-small;
+
+    a {
+      color: red;
+      font-size: x-small;
+
+      &:hover {
+        color: red;
+        font-size: small;
+        font-weight: 600;
+      }
+    }
+
+    input {
+      width: 50%;
+    }
+  }
+}

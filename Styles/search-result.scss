@@ -43,13 +43,9 @@ header {
   height: 100vh;
 
   .inside-bg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     background: $main-color;
     width: 70%;
-    height: 600px;
-    opacity: 1;
+    min-height: 500px auto;
     margin-top: 40px;
     margin-bottom: 40px;
     justify-content: center;
@@ -73,7 +69,7 @@ header {
 
         .card {
           width: 48%;
-          height: auto;
+          min-height: 45px;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           transition: 0.3s;
           margin-bottom: 20px;
@@ -110,6 +106,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     li {
       padding-left: 10px;
     }
@@ -118,6 +115,7 @@ header {
 
 .bottom-sect {
   @include flex-prop(row);
+
   height: 50vh;
   background: $main-color;
   box-sizing: border-box;
@@ -125,34 +123,6 @@ header {
   justify-content: space-between;
   margin: 0 300px;
   flex-wrap: wrap;
-
-  .sect-item {
-    flex-basis: 20%;
-    background: #fa2e2e;
-    border-radius: 5px;
-    height: 250px;
-    padding: 20px;
-    margin: auto;
-
-    p {
-      font-family: $main-font;
-      font-size: 18px;
-      color: $main-color;
-
-      a {
-        color: $main-color;
-
-        &:hover {
-          font-weight: bolder;
-        }
-      }
-    }
-
-    small {
-      color: $main-color;
-    }
-  }
-}
 
 .about-layout {
   display: flex;
@@ -178,8 +148,11 @@ header {
 .search-hd {
   font-size: 20px;
   font-family: $main-font;
-  font-weight: bolder;
+  font-weight: bold;
   margin-top: 80px;
+  padding: 20px;
+  background: #b8b8b8;
+  min-height: 200px;
 }
 
 footer {

@@ -59,19 +59,9 @@ header {
 }
 
 .top-sect .inside-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background: #fff;
   width: 70%;
-  height: 600px;
-  opacity: 1;
+  min-height: 500px auto;
   margin-top: 40px;
   margin-bottom: 40px;
   -webkit-box-pack: center;
@@ -109,7 +99,7 @@ header {
 
 .top-sect .inside-bg .container-fluid .my-table .card {
   width: 48%;
-  height: auto;
+  min-height: 45px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
@@ -157,6 +147,9 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-footer ul li {
@@ -250,6 +243,8 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   margin-top: 80px;
+  padding: 20px;
+  background: #b8b8b8;
 }
 
 footer {

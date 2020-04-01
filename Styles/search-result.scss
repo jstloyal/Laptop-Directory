@@ -124,23 +124,24 @@ header {
   margin: 0 300px;
   flex-wrap: wrap;
 
-.about-layout {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 50px;
-  padding-top: 0;
-  margin: auto;
+  .about-layout {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+    padding-top: 0;
+    margin: auto;
 
-  .biz-art {
-    flex: 1;
-    padding: 20px 50px;
-    text-align: justify;
+    .biz-art {
+      flex: 1;
+      padding: 20px 50px;
+      text-align: justify;
 
-    p {
-      font-family: $main-font;
-      font-size: 18px;
-      font-weight: 700;
+      p {
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 700;
+      }
     }
   }
 }
@@ -149,10 +150,11 @@ header {
   font-size: 20px;
   font-family: $main-font;
   font-weight: bold;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   padding: 20px;
   background: #b8b8b8;
-  min-height: 200px;
+  min-height: 120px;
 }
 
 footer {

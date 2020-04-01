@@ -69,25 +69,20 @@
         </div>
         <div class="inside-bg">
           <label class="mdb-main-label">SEARCH BY PROCESSOR TYPE:</label>
-          <select class="mdb-select" searchable="Search here..">
-            <option value="1" disabled selected>Choose your option</option>
-            <option value="2"> <a href="searh.html"> Intel core i9</a></option>
-            <option value="3"> <a href="search.html"></a> Intel core i7</option>
-            <option
-              value="4"
-              data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
-              class="rounded-circle"
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle"
+              data-toggle="dropdown"
             >
-              Intel core i5</option
-            >
-            <option
-              value="5"
-              data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg"
-              class="rounded-circle"
-            >
-              AMD Ryzen 9</option
-            >
-          </select>
+              Find your specification...
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="searh.html">Intel core i9</a>
+              <a class="dropdown-item" href="#">Intel core i7 soon</a>
+              <a class="dropdown-item" href="#">Other coming soon</a>
+            </div>
+          </div>
         </div>
         <a href="#"
           ><button class="ui button">

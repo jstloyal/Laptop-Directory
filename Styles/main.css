@@ -81,10 +81,6 @@ main .top-sect .inside-bg {
   margin-bottom: 40px;
 }
 
-main .top-sect .inside-bg .mdb-select {
-  width: 90%;
-}
-
 main .top-sect .inside-bg label {
   color: #000;
   font-family: "Roboto", sans-serif;

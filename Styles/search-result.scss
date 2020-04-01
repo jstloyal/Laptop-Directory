@@ -47,7 +47,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     background: $main-color;
-    width: 80%;
+    width: 70%;
     height: 600px;
     opacity: 1;
     margin-top: 40px;
@@ -60,21 +60,59 @@ header {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
-    label {
-      color: #000;
-      font-family: $main-font;
-      font-size: 18px;
-    }
+    .container-fluid {
+      h2 {
+        color: #fa2e2e;
+      }
 
-    .my-option {
-      @include flex-prop(column);
-      flex-basis: 100%;
+      .my-table {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card {
+          width: 48%;
+          height: auto;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          transition: 0.3s;
+          margin-bottom: 20px;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-family: $main-font;
+
+          &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
     }
   }
+}
 
-  .welcome-msg {
+.buy-btn {
+  padding: 10px;
+  background: blue;
+  color: $main-color;
+  width: 77.7px;
+  float: right;
+
+  .envelope {
     color: $main-color;
-    font-weight: bolder;
+  }
+}
+
+.container-footer {
+  margin: 60px auto;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      padding-left: 10px;
+    }
   }
 }
 

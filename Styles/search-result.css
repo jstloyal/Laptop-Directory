@@ -3,11 +3,17 @@
           box-sizing: border-box;
 }
 
+main {
+  margin-top: 100px;
+}
+
 .large-nav {
   min-height: 50px;
   background: red;
   position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .large-nav .container-fluid {
@@ -73,7 +79,7 @@
   background: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .top-sect .inside-bg {
@@ -240,7 +246,7 @@
 }
 
 footer {
-  height: 200px;
+  min-height: 200px;
   background: #000;
   margin: 0 auto;
 }
@@ -336,6 +342,23 @@ footer .top-footer {
   }
   .navbar-nav li span {
     display: none;
+  }
+  .top-sect {
+    height: auto;
+  }
+  .top-sect .inside-bg {
+    height: auto;
+  }
+  .top-sect .inside-bg .container-fluid .my-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-sect .inside-bg .container-fluid .my-table .card {
+    width: 80%;
+    min-height: 50px;
+    margin: 20px auto;
   }
   footer .first-list a {
     font-size: 12px;

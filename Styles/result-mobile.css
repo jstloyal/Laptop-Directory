@@ -22,6 +22,24 @@ main .top-sect .welcome-msg {
   font-size: 20px;
 }
 
+.top-sect {
+  height: auto;
+}
+
+.top-sect .inside-bg {
+  height: auto;
+}
+
+.top-sect .inside-bg .container-fluid .my-table {
+  flex-direction: column;
+}
+
+.top-sect .inside-bg .container-fluid .my-table .card {
+  width: 80%;
+  min-height: 50px;
+  margin: 20px auto;
+}
+
 footer .first-list a {
   font-size: 10px;
 }

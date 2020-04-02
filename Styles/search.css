@@ -13,6 +13,7 @@ main {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .large-nav .container-fluid {
@@ -361,9 +362,11 @@ footer .top-footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
   .bottom-sect .sect-item {
-    width: 40%;
+    width: 50%;
+    margin: 20px auto;
   }
   footer .first-list a {
     font-size: 12px;

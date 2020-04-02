@@ -5,11 +5,17 @@
   box-sizing: border-box;
 }
 
+main {
+  margin-top: 100px;
+}
+
 .large-nav {
   min-height: 50px;
   background: red;
   position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 1000;
 
   .container-fluid {
     display: flex;
@@ -48,7 +54,7 @@
   background: $main-color;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 
   .inside-bg {
     background: $main-color;
@@ -166,7 +172,7 @@
 }
 
 footer {
-  height: 200px;
+  min-height: 200px;
   background: #000;
   margin: 0 auto;
 
@@ -245,6 +251,26 @@ footer {
       }
       span {
         display: none;
+      }
+    }
+  }
+
+  .top-sect {
+    height: auto;
+
+    .inside-bg {
+      height: auto;
+
+      .container-fluid {
+        .my-table {
+          flex-direction: column;
+
+          .card {
+            width: 80%;
+            min-height: 50px;
+            margin: 20px auto;
+          }
+        }
       }
     }
   }

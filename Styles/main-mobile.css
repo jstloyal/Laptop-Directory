@@ -21,3 +21,15 @@ main .top-sect .inside-bg {
 main .top-sect .welcome-msg {
   font-size: 20px;
 }
+
+main .bottom-sect {
+  width: 80%;
+}
+
+main .bottom-sect p {
+  font-size: 19px;
+}
+
+main .bottom-sect .about-layout {
+  flex-direction: column;
+}

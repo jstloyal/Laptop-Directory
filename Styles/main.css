@@ -255,5 +255,11 @@ footer .top-footer {
   main .bottom-sect p {
     font-size: 20px;
   }
+  main .bottom-sect .about-layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */

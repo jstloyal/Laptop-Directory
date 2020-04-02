@@ -193,11 +193,17 @@ footer {
     }
   }
 
-  main .bottom-sect {
-    width: 80%;
+  main {
+    .bottom-sect {
+      width: 80%;
 
-    p {
-      font-size: 20px;
+      p {
+        font-size: 20px;
+      }
+
+      .about-layout {
+        flex-direction: column;
+      }
     }
   }
 }

@@ -2,6 +2,10 @@
   flex-direction: column;
 }
 
+.top-sect .inside-bg {
+  height: auto;
+}
+
 main .top-sect .inside-bg {
   width: 80%;
 }
@@ -23,10 +27,6 @@ main .top-sect .welcome-msg {
 }
 
 .top-sect {
-  height: auto;
-}
-
-.top-sect .inside-bg {
   height: auto;
 }
 

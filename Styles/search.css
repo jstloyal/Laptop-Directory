@@ -3,10 +3,15 @@
           box-sizing: border-box;
 }
 
+main {
+  margin-top: 120px;
+}
+
 .large-nav {
   min-height: 50px;
   background: red;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -70,31 +75,29 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(/images/mother-board.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
+  background: #b8b8b8;
+  height: 60vh;
 }
 
 .top-sect .inside-bg {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background: #b8b8b8;
-  width: 80%;
-  height: 200px;
-  opacity: 1;
-  margin-top: 40px;
-  margin-bottom: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .top-sect .inside-bg label {
@@ -118,13 +121,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  height: 20vh;
 }
 
 .top-sect .welcome-msg {
   color: #fff;
   font-weight: bolder;
+  margin-top: 40px;
 }
 
 .bottom-sect {
@@ -142,25 +147,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 50vh;
+  min-height: 50vh;
   background: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 300px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 20px auto;
 }
 
 .bottom-sect .sect-item {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  width: 20%;
+  min-height: 50vh;
   background: #fa2e2e;
   border-radius: 5px;
-  height: 250px;
+  min-height: 250px;
   padding: 20px;
   margin: auto;
 }
@@ -217,7 +219,7 @@
 }
 
 footer {
-  height: 200px;
+  min-height: 200px;
   background: #000;
   margin: 0 auto;
 }
@@ -313,6 +315,77 @@ footer .top-footer {
   }
   .navbar-nav li span {
     display: none;
+  }
+  .top-sect .inside-bg {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .top-sect .inside-bg label {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .top-sect .inside-bg .single-opt {
+    display: none;
+  }
+  .top-sect .welcome-msg {
+    margin-top: 35px;
+  }
+  .bottom-sect {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottom-sect .sect-item {
+    width: 40%;
+  }
+  footer .first-list a {
+    font-size: 12px;
+  }
+  footer .top-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-item small {
+    margin-left: 15px;
   }
 }
 /*# sourceMappingURL=search.css.map */

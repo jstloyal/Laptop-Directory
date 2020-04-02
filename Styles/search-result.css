@@ -337,5 +337,27 @@ footer .top-footer {
   .navbar-nav li span {
     display: none;
   }
+  footer .first-list a {
+    font-size: 12px;
+  }
+  footer .top-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-item small {
+    margin-left: 15px;
+  }
 }
 /*# sourceMappingURL=search-result.css.map */

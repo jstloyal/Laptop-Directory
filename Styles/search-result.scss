@@ -248,4 +248,26 @@ footer {
       }
     }
   }
+
+  footer {
+    .first-list {
+      a {
+        font-size: 12px;
+      }
+    }
+
+    .top-footer {
+      flex-direction: column;
+    }
+  }
+
+  .footer-item {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+
+    small {
+      margin-left: 15px;
+    }
+  }
 }

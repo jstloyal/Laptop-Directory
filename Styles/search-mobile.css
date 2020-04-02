@@ -2,10 +2,6 @@
   flex-direction: column;
 }
 
-main .top-sect .inside-bg {
-  width: 80%;
-}
-
 .navbar-brand {
   padding-bottom: 10px;
 }
@@ -20,4 +16,40 @@ main .top-sect .inside-bg {
 
 main .top-sect .welcome-msg {
   font-size: 20px;
+}
+
+.top-sect .inside-bg {
+  margin: 0 10px;
+}
+
+.top-sect .inside-bg .single-opt {
+  display: none;
+}
+
+.bottom-sect {
+  flex-direction: column;
+  height: auto;
+}
+
+.bottom-sect .sect-item {
+  width: 70%;
+  margin: 20px auto;
+}
+
+footer .first-list a {
+  font-size: 10px;
+}
+
+footer .top-footer {
+  flex-direction: column;
+}
+
+.footer-item {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-item small {
+  margin-left: 18px;
 }

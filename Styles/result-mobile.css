@@ -21,3 +21,21 @@ main .top-sect .inside-bg {
 main .top-sect .welcome-msg {
   font-size: 20px;
 }
+
+footer .first-list a {
+  font-size: 10px;
+}
+
+footer .top-footer {
+  flex-direction: column;
+}
+
+.footer-item {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-item small {
+  margin-left: 18px;
+}

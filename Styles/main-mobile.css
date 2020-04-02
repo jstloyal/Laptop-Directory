@@ -33,3 +33,21 @@ main .bottom-sect p {
 main .bottom-sect .about-layout {
   flex-direction: column;
 }
+
+footer .first-list a {
+  font-size: 10px;
+}
+
+footer .top-footer {
+  flex-direction: column;
+}
+
+.footer-item {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-item small {
+  margin-left: 18px;
+}

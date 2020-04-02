@@ -1,3 +1,4 @@
 .vscode/
 *.scss
 *.css.map
+Styles/_variables.scss

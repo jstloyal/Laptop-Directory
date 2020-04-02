@@ -21,13 +21,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/Styles/search-result.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-width: 768px) and (min-width: 450px)"
+      href="/Styles/result-mobile.css"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
+    <header class="large-nav">
+      <nav class="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="home.html"
+            <a class="navbar-brand" href="#"
               ><img src="/images/main-logo.png" alt="business logo"
             /></a>
           </div>
@@ -46,11 +52,7 @@
               <a href="#"><i class="rss icon"></i><span>BLOG</span></a>
             </li>
             <li class="dropdown">
-              <a href="#"><span>MORE</span></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item"><a href="#">MacBook</a></li>
-                <li class="dropdown-item"><a href="#">Windows</a></li>
-              </ul>
+              <a href="#"><i class="bars icon"></i><span>MORE</span></a>
             </li>
           </ul>
         </div>

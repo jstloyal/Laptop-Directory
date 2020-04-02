@@ -1,16 +1,41 @@
 @import "./flex-prop";
 @import "./variables";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-header {
-  height: 50px;
+.large-nav {
+  min-height: 50px;
   background: red;
   position: fixed;
   width: 100%;
-  flex-wrap: wrap;
+  z-index: 1000;
+
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        a {
+          color: $main-color;
+          font-family: $main-font;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 
 .navbar-brand img {
@@ -20,27 +45,13 @@ header {
   margin: 0;
 }
 
-.navbar-nav {
-  display: flex;
-  flex-wrap: wrap;
-
-  li {
-    padding-right: 10px;
-    padding-left: 10px;
-
-    a {
-      color: $main-color;
-      font-family: $main-font;
-    }
-  }
-}
-
 main {
   .top-sect {
     @include flex-prop(column);
     background: url(/images/lines-of-code.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 
     .inside-bg {
       @include flex-prop(column);
@@ -63,6 +74,7 @@ main {
       color: $main-color;
     }
   }
+
   .bottom-sect {
     width: 60%;
     margin: auto;
@@ -165,6 +177,27 @@ footer {
 
     input {
       width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .navbar-nav {
+    li {
+      i {
+        font-size: 20px;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+
+  main .bottom-sect {
+    width: 80%;
+
+    p {
+      font-size: 20px;
     }
   }
 }

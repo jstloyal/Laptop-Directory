@@ -1,15 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-header {
-  height: 50px;
+.large-nav {
+  min-height: 50px;
   background: red;
   position: fixed;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.large-nav .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.large-nav .container-fluid .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.large-nav .container-fluid .navbar-nav li {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.large-nav .container-fluid .navbar-nav li a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .navbar-brand img {
@@ -17,24 +55,6 @@ header {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-.navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.navbar-nav li {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.navbar-nav li a {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
 }
 
 main .top-sect {
@@ -55,6 +75,7 @@ main .top-sect {
   background: url(/images/lines-of-code.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 main .top-sect .inside-bg {
@@ -219,5 +240,20 @@ footer .top-footer {
 
 .footer-item small input {
   width: 50%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .navbar-nav li i {
+    font-size: 20px;
+  }
+  .navbar-nav li span {
+    display: none;
+  }
+  main .bottom-sect {
+    width: 80%;
+  }
+  main .bottom-sect p {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+.large-nav .container-fluid {
+  flex-direction: column;
+}
+
+main .top-sect .inside-bg {
+  width: 80%;
+}
+
+.navbar-brand {
+  padding-bottom: 10px;
+}
+
+.navbar-nav li i {
+  font-size: 18px;
+}
+
+.navbar-nav li a span {
+  display: none;
+}
+
+main .top-sect .welcome-msg {
+  font-size: 20px;
+}

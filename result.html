@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Search result</title>
+    <title>Your Laptop Directory Result</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -16,48 +16,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Styles/search-result.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen and (max-width: 768px) and (min-width: 450px)"
-      href="/Styles/result-mobile.css"
-    />
+    <link rel="stylesheet" href="css/result.css" />
   </head>
   <body>
     <header class="large-nav">
       <nav class="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="home.html"
-              ><img src="/images/main-logo.png" alt="business logo"
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="../Capestone-Project/images/Capture.PNG"
+                alt="business logo"
             /></a>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="searh.html"
-                ><i class="search icon"></i><span>SYSTEMS</span></a
+              <a class="my-icon" href="searh.html"
+                ><i class="search icon"></i
+                ><span class="spans">SYSTEMS</span></a
               >
             </li>
             <li>
-              <a href="home.html"
-                ><i class="user outline icon"></i><span>ABOUT</span></a
+              <a class="my-icon" href="home.html"
+                ><i class="user outline icon"></i
+                ><span class="spans">ABOUT</span></a
               >
             </li>
             <li>
-              <a href="#"><i class="rss icon"></i><span>BLOG</span></a>
+              <a class="my-icon" href="#"
+                ><i class="rss icon"></i><span class="spans">BLOG</span></a
+              >
             </li>
             <li class="dropdown">
-              <a href="#"><i class="bars icon"></i><span>MORE</span></a>
+              <a class="my-icon" href="#"
+                ><i class="bars icon"></i><span class="spans">MORE</span></a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
     <main>
       <section class="top-sect">
         <div class="welcome-msg d-none">
@@ -65,7 +64,7 @@
         </div>
         <div class="inside-bg">
           <div class="container-fluid">
-            <h2>MacBook Pro</h2>
+            <h2 class="result-head">MacBook Pro</h2>
             <div class="my-table">
               <div class="card">
                 <p>TYPE: &ensp;<a href="#">Apple MacBook Pro</a></p>
@@ -113,7 +112,9 @@
                 </p>
               </div>
             </div>
-            <div class="buy-btn"><i class="cart arrow down icon"></i>BUY</div>
+            <div class="buy-btn">
+              <i class="cart arrow down icon"></i><a href="#"> BUY</a>
+            </div>
             <div class="container-footer">
               <ul>
                 <li>
@@ -146,6 +147,17 @@
           </div>
         </div>
       </section>
+      <p class="terms">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
 
       <div class="search-hd text-center">
         <a href="#"
@@ -168,49 +180,54 @@
     <footer>
       <div>
         <ul class="first-list">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">SEARCH</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">ADVERTISE</a></li>
-          <li>
+          <li class="li-list"><a href="#">HOME</a></li>
+          <li class="li-list"><a href="#">SEARCH</a></li>
+          <li class="li-list"><a href="#">ABOUT US</a></li>
+          <li class="li-list"><a href="#">ADVERTISE</a></li>
+          <li class="li-list">
             <a class="footer-logo" href="#"
-              ><img src="/images/main-logo.png" alt=""
+              ><img
+                src="../Capestone-Project/images/Capture.PNG"
+                alt="business logo"
             /></a>
           </li>
-          <li><a href="#">FACEBOOK</a></li>
-          <li><a href="#">TWITTER</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="https://www.google.ng/maps">GOOGLE</a></li>
+          <li class="li-list"><a href="#">FACEBOOK</a></li>
+          <li class="li-list"><a href="#">TWITTER</a></li>
+          <li class="li-list"><a href="#">BLOG</a></li>
+          <li class="li-list">
+            <a href="https://www.google.ng/maps">GOOGLE</a>
+          </li>
         </ul>
       </div>
       <div class="top-footer">
         <div class="footer-item">
-          <a href="#">SUBSCRIBE</a>
-          <small class="ui inverted transparent icon input">
-            <input type="text" placeholder="Enter your mail..." />
-            <button class="ui button">send</button>
-          </small>
+          <a href="#" class="text-center">SUBSCRIBE</a>
+          <div class="ui action input">
+            <input type="text" placeholder="Search..." />
+            <button class="ui button">Send</button>
+          </div>
         </div>
 
         <div class="footer-item">
-          <a href="#">CONTACT</a>
-          <small
+          <a href="#" class="text-center">CONTACT</a>
+          <small class="text-center"
             >Need to through to us fast? <br />
             <a href="#">contact@loyaltysystems.com</a></small
           >
         </div>
         <div class="footer-item">
-          <a href="#">ABOUT</a>
-          <small
+          <a href="#" class="text-center">ABOUT</a>
+          <small class="text-center"
             >As a programmer or aspiring programmer, we believe the core and
             main tool that will enable us to be productive at all times is our
             laptop. We bring you the best laptop you can have as a programmer
             and guarantee the best and flawless workflow when you get any of the
-            specified laptops. <a href="#">Learn how it works</a>
+            specified laptops. <a href="#about">Learn how it works</a>
           </small>
         </div>
       </div>
     </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

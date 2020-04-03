@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>loyalty systems</title>
+    <title>Your Laptop Directory Home</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -16,13 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
-    <link rel="stylesheet" href="/Styles/main.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen and (max-width: 768px) and (min-width: 450px)"
-      href="/Styles/main-mobile.css"
-    />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="large-nav">
@@ -30,25 +24,33 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="home.html"
-              ><img src="/images/main-logo.png" alt="business logo"
+              ><img
+                src="../Capestone-Project/images/Capture.PNG"
+                alt="business logo"
             /></a>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="searh.html"
-                ><i class="search icon"></i><span>SYSTEMS</span></a
+              <a class="my-icon" href="searh.html"
+                ><i class="search icon"></i
+                ><span class="spans">SYSTEMS</span></a
               >
             </li>
             <li>
-              <a href="home.html"
-                ><i class="user outline icon"></i><span>ABOUT</span></a
+              <a class="my-icon" href="home.html"
+                ><i class="user outline icon"></i
+                ><span class="spans">ABOUT</span></a
               >
             </li>
             <li>
-              <a href="#"><i class="rss icon"></i><span>BLOG</span></a>
+              <a class="my-icon" href="#"
+                ><i class="rss icon"></i><span class="spans">BLOG</span></a
+              >
             </li>
             <li class="dropdown">
-              <a href="#"><i class="bars icon"></i><span>MORE</span></a>
+              <a class="my-icon" href="#"
+                ><i class="bars icon"></i><span class="spans">MORE</span></a
+              >
             </li>
           </ul>
         </div>
@@ -58,22 +60,20 @@
     <main>
       <section class="top-sect">
         <div class="welcome-msg text-center">
-          <h2>LOYALTY SYSTEMS... SYSTEM FOR CODERS.</h2>
+          <h2>JUSTC0DE... SYSTEM FOR CODERS.</h2>
         </div>
         <div class="inside-bg">
           <label class="mdb-main-label">SEARCH BY PROCESSOR TYPE:</label>
-          <div class="dropdown">
-            <button
-              type="button"
-              class="btn btn-secondary dropdown-toggle"
-              data-toggle="dropdown"
-            >
-              Find your specification...
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="searh.html">Intel core i9</a>
-              <a class="dropdown-item" href="#">core i7 coming soon</a>
-              <a class="dropdown-item" href="#">Others coming soon</a>
+          <div class="wrap">
+            <div class="search">
+              <input
+                type="text"
+                class="searchTerm"
+                placeholder="Type here..."
+              />
+              <button type="submit" class="searchButton">
+                <a class="the-search" href="search.html"> Search</a>
+              </button>
             </div>
           </div>
         </div>
@@ -81,12 +81,15 @@
           <button class="ui button">How it works</button>
         </p>
       </section>
-      <section class="bottom-sect" id="about">
+      <section class="bottom-sect">
         <h2 class="d-none">Gold</h2>
-        <p class="text-center">LOYALTY-SYSTEM WORKS IN FOUR SIMPLE STEPS</p>
+        <p class="sect2 text-center">
+          JUSTC0DE WORKS IN FOUR SIMPLE STEPS
+        </p>
         <div class="about-layout">
           <div class="biz-art">
-            <p class="text-center">1-SEARCH:</p>
+            <p class="text-center"><i class="search plus icon"></i></p>
+            <p class="text-center ahead">1-SEARCH:</p>
             <small
               >Laptops are long-time period investments. With many of the brand
               new models accomplishing over the $1,000 rate point, it’s crucial
@@ -97,7 +100,8 @@
             >
           </div>
           <div class="biz-art">
-            <p class="text-center">2-LOCATE:</p>
+            <p class="text-center"><i class="warehouse icon"></i></p>
+            <p class="text-center ahead">2-LOCATE:</p>
             <small
               >After choosing what you would like , it is time to locate trusted
               stores which have what you would like at a competitive price. it's
@@ -109,7 +113,10 @@
 
         <div class="about-layout">
           <div class="biz-art">
-            <p class="text-center">3-ORDER:</p>
+            <p class="text-center">
+              <i class="file alternate outline icon"></i>
+            </p>
+            <p class="text-center ahead">3-ORDER:</p>
             <small>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -120,7 +127,8 @@
             >
           </div>
           <div class="biz-art">
-            <p class="text-center">4-RELAX:</p>
+            <p class="text-center"><i class="bath icon"></i></p>
+            <p class="text-center ahead">4-RELAX:</p>
             <small
               >Relax while we do the work and deliver to the doorstep at no
               additional cost. No hidden charges, pay on delivery, great return
@@ -135,40 +143,44 @@
     <footer>
       <div>
         <ul class="first-list">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">SEARCH</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">ADVERTISE</a></li>
-          <li>
+          <li class="li-list"><a href="#">HOME</a></li>
+          <li class="li-list"><a href="#">SEARCH</a></li>
+          <li class="li-list"><a href="#">ABOUT US</a></li>
+          <li class="li-list"><a href="#">ADVERTISE</a></li>
+          <li class="li-list">
             <a class="footer-logo" href="#"
-              ><img src="/images/main-logo.png" alt=""
+              ><img
+                src="../Capestone-Project/images/Capture.PNG"
+                alt="business logo"
             /></a>
           </li>
-          <li><a href="#">FACEBOOK</a></li>
-          <li><a href="#">TWITTER</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="https://www.google.ng/maps">GOOGLE</a></li>
+          <li class="li-list"><a href="#">FACEBOOK</a></li>
+          <li class="li-list"><a href="#">TWITTER</a></li>
+          <li class="li-list"><a href="#">BLOG</a></li>
+          <li class="li-list">
+            <a href="https://www.google.ng/maps">GOOGLE</a>
+          </li>
         </ul>
       </div>
       <div class="top-footer">
         <div class="footer-item">
-          <a href="#">SUBSCRIBE</a>
-          <small class="ui inverted transparent icon input">
-            <input type="text" placeholder="Enter your mail..." />
-            <button class="ui button">send</button>
-          </small>
+          <a href="#" class="text-center">SUBSCRIBE</a>
+          <div class="ui action input">
+            <input type="text" placeholder="Search..." />
+            <button class="ui button">Send</button>
+          </div>
         </div>
 
         <div class="footer-item">
-          <a href="#">CONTACT</a>
-          <small
+          <a href="#" class="text-center">CONTACT</a>
+          <small class="text-center"
             >Need to through to us fast? <br />
             <a href="#">contact@loyaltysystems.com</a></small
           >
         </div>
         <div class="footer-item">
-          <a href="#">ABOUT</a>
-          <small
+          <a href="#" class="text-center">ABOUT</a>
+          <small class="text-center"
             >As a programmer or aspiring programmer, we believe the core and
             main tool that will enable us to be productive at all times is our
             laptop. We bring you the best laptop you can have as a programmer
@@ -178,6 +190,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

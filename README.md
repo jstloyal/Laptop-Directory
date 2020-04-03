@@ -14,7 +14,7 @@ Use CSS selectors to style
 Use Bootstrap
 Use flexbox and grid to position elements.
 
-![screenshot](images/loyaltysytems.jpg)
+![screenshot](images/capstone.png)
 
 ## Built With
 
@@ -24,7 +24,7 @@ Use flexbox and grid to position elements.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/jstloyal/Laptop-Directory/7c781b0dcf12aa6a05683e12dfe1222985b097d8/HTML-file/home.html)
+[Live Demo Link](https://rawcdn.githack.com/jstloyal/Laptop-Directory/8cfa3b1d707f4bb8a3e229c6122fa9b06b43da61/index.html)
 
 ## Getting Started
 

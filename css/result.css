@@ -35,20 +35,17 @@ main {
   padding: 0 10px;
 }
 
-.search-hd a,
-.li-list a,
-.buy-btn a {
+.my-color,
+.my-color:hover {
   color: #fff;
 }
 
 .footer-item a {
-  color: #fff;
   font-weight: 800;
   padding: 20px 0;
 }
 
 .navbar-nav li a {
-  color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -130,17 +127,8 @@ main {
 .buy-btn {
   padding: 10px;
   background: blue;
-  color: #fff;
   width: 77.7px;
   float: right;
-}
-
-.buy-btn .envelope {
-  color: #fff;
-}
-
-.buy-btn a:hover {
-  color: #fff;
 }
 
 .container-footer {
@@ -247,7 +235,6 @@ footer {
 
 .footer-item small {
   text-align: justify;
-  color: #fff;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {

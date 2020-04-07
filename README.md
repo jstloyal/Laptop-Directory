@@ -26,6 +26,7 @@ Use flexbox and grid to position elements.
 ## Live Demo
 
 [Live Demo Link](https://rawcdn.githack.com/jstloyal/Laptop-Directory/8cfa3b1d707f4bb8a3e229c6122fa9b06b43da61/index.html)
+[Live Presentation Link](https://drive.google.com/file/d/1_FVBYdBTkHOOUVAg_awzNbblcgA4F9vj/view?usp=sharing)
 
 ## Getting Started
 

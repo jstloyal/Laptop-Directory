@@ -10,6 +10,7 @@ Building an original personal project
 > How the project was done
 
 Use semantic HTML tags
+Use SASS
 Use CSS selectors to style
 Use Bootstrap
 Use flexbox and grid to position elements.

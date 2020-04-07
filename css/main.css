@@ -35,18 +35,16 @@ main {
   padding: 0 10px;
 }
 
-.li-list a {
+.my-color {
   color: #fff;
 }
 
 .footer-item a {
-  color: #fff;
   font-weight: 800;
   padding: 20px 0;
 }
 
 .navbar-nav li a {
-  color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -80,7 +78,6 @@ main {
 }
 
 .welcome-msg {
-  color: #fff;
   font-weight: 800;
   padding: 20px 0;
 }
@@ -117,15 +114,6 @@ main {
   opacity: 1;
 }
 
-.the-search {
-  color: #fff;
-}
-
-.the-search:hover {
-  font-size: larger;
-  color: #fff;
-}
-
 .searchTerm {
   width: 80%;
   border: 1px solid #d45649;
@@ -145,7 +133,6 @@ main {
   border: 1px solid #d45649;
   background: #d45649;
   text-align: center;
-  color: #fff;
   cursor: pointer;
   font-size: 20px;
 }
@@ -263,7 +250,6 @@ footer {
 
 .footer-item small {
   text-align: justify;
-  color: #fff;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
